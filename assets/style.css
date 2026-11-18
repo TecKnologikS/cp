@@ -59,7 +59,7 @@ nav.site a:hover, nav.site a[aria-current="page"] { color: var(--ink); }
 .stamp .frame { fill: none; stroke: var(--blue); stroke-width: 2; }
 .stamp text { font-family: var(--display); text-anchor: middle; }
 .stamp .small { font-weight: 600; font-size: 13px; letter-spacing: .18em; fill: var(--blue); }
-.stamp .code { font-weight: 700; font-size: 54px; fill: var(--blue); }
+.stamp .code { font-weight: 700; font-size: 40px; fill: var(--blue); }
 .stamp .city { font-weight: 600; font-size: 14px; letter-spacing: .14em; fill: var(--red); }
 .hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(38px, 9vw, 58px); line-height: 1.02; letter-spacing: .01em; text-transform: uppercase; margin: 22px 0 14px; }
 .hero p.lead { color: var(--muted); font-size: 19px; margin: 0 auto 26px; max-width: 34em; }
