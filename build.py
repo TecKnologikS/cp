@@ -53,7 +53,8 @@ def render(lang, page, title, description, body):
   <meta name="description" content="{description}">
   <meta name="theme-color" content="#2445a8">
   <meta name="apple-itunes-app" content="app-id={APP_ID}">
-  <link rel="icon" href="{pre}assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="{pre}assets/icon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="{pre}assets/icon-180.png">
   <link rel="alternate" hreflang="en" href="{alt_en}">
   <link rel="alternate" hreflang="fr" href="{alt_fr}">
   <link rel="alternate" hreflang="x-default" href="{alt_en}">
@@ -84,14 +85,9 @@ def render(lang, page, title, description, body):
 """
 
 
-STAMP = """        <svg class="stamp" viewBox="0 0 150 190" aria-hidden="true" focusable="false">
-          <rect class="paper" x="4" y="4" width="142" height="182"/>
-          <rect class="perf" x="4" y="4" width="142" height="182" fill="none" stroke-width="7" stroke-dasharray="0 12" stroke-linecap="round"/>
-          <rect class="frame" x="18" y="18" width="114" height="154"/>
-          <text class="small" x="75" y="50">FRANCE</text>
-          <text class="code" x="75" y="110" textLength="96" lengthAdjust="spacingAndGlyphs">74000</text>
-          <text class="city" x="75" y="148">ANNECY</text>
-        </svg>"""
+def app_icon(pre):
+    """Icône de l'app (générée dans le dépôt de l'app : tools/icon)."""
+    return f'        <img class="app-icon" src="{pre}assets/icon-512.png" width="160" height="160" alt="">'
 
 
 def store_button(lang):
@@ -101,7 +97,7 @@ def store_button(lang):
 HOME = {
     "en": f"""    <main>
       <section class="hero">
-{STAMP}
+{app_icon("")}
         <h1>Every commune,<br>its postal code.</h1>
         <p class="lead">Search any French commune by name, postal code or INSEE code. Get its postal code to copy or share, and the facts that go with it. On iPhone and iPad.</p>
         {store_button('en')}
@@ -128,7 +124,7 @@ HOME = {
     </main>""",
     "fr": f"""    <main>
       <section class="hero">
-{STAMP}
+{app_icon("../")}
         <h1>Chaque commune,<br>son code postal.</h1>
         <p class="lead">Recherche n’importe quelle commune française par nom, code postal ou code INSEE. Récupère son code postal à copier ou à partager, avec les informations qui vont avec. Sur iPhone et iPad.</p>
         {store_button('fr')}

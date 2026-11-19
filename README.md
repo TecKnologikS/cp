@@ -19,6 +19,6 @@ Polices Barlow Condensed auto-hébergées (`assets/fonts`, licence OFL incluse) 
 
 La politique de confidentialité décrit le fonctionnement réel de l'app (consentement UMP puis ATT, bannière de l'onglet Rechercher, onglet Autour de moi et API Géo, libellés « Options de confidentialité », « Sans pub », « Restaurer les achats »). Toute évolution qui touche aux données (nouveau SDK, analytics, compte, synchronisation des favoris, autre achat…) doit être reportée ici avant sa mise en ligne, ainsi que dans la fiche « Confidentialité » d'App Store Connect. Le prix (`PRICE`) et la date `UPDATED` aussi.
 
-À faire : icône de l'app (le catalogue d'assets de l'app n'a pas encore d'`AppIcon` ; le site utilise un favicon et un timbre dessinés en SVG), badge officiel « Download on the App Store » (absent des sites modèles : lien texte).
+Icône : `assets/icon-*.png`, redimensionnée depuis `iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/AppIcon.png` du dépôt de l'app (générée par `tools/icon/generate_icon.py`). À faire : badge officiel « Download on the App Store » (absent des sites modèles : lien texte).
 
 Ces textes ne remplacent pas un avis juridique.

@@ -98,3 +98,4 @@ nav.site a:hover, nav.site a[aria-current="page"] { color: var(--ink); }
 footer.site { border-top: 1px solid var(--line); margin-top: 40px; padding: 22px 0 40px; color: var(--muted); font-size: 14px; }
 footer.site nav a { color: var(--muted); margin-right: 16px; display: inline-block; }
 footer.site p { margin: 8px 0 0; }
+.app-icon { width: 160px; height: 160px; display: block; margin: 0 auto 12px; border-radius: 36px; box-shadow: 0 10px 24px rgba(20, 33, 61, .22); }
